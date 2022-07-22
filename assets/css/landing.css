@@ -1,0 +1,47 @@
+.row{
+  margin: 0;
+  width: 100%;
+}
+.navbar .navbar-brand{
+    font-size: 36px;
+    color: #1c4fc3 !important;
+    margin-left: 10px;
+}
+.hero{
+    width: 100%;
+    height: 500px;
+    background-color: #1c4fc3;
+    padding: 0px 40px;
+}
+.hero .hero-content{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.hero .hero-content .btn-register {
+    color: #1c4fc3;
+    
+}
+.navbar-nav{
+    margin-right: 10px;
+}
+.navbar-nav .nav-link{
+    font-size: 20px;
+    color: #1c4fc3 !important;
+    margin-right: 10px;
+}
+.info .info-content h2{
+    color: #1c4fc3;
+    font-size: 40px;
+}
+.info .info-content p{
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.info-content .hero-image{
+   
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
