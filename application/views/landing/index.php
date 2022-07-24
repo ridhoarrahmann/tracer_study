@@ -64,6 +64,34 @@
         </div>
       </div>
     </section>
+    <section id="step" class="step">
+      <div class="step-content row d-flex ms-auto me-auto justify-content-center">
+          <div class="col-md-4  step-item">
+            <span>
+               <center>
+                <div class="circle bg-primary"><h1>1</h1></div></center>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolore ex quidem amet, asperiores corrupti, fugiat nulla eligendi fugit exercitationem ea incidunt assumenda! Laborum autem voluptatum, quas ipsa architecto corporis.</p>
+                </span>
+          </div>
+          <div class="col-md-4  step-item">
+            <span>
+            <center>
+             <div class="circle bg-primary"><h2>2</h2></div>
+            </center>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolore ex quidem amet, asperiores corrupti, fugiat nulla eligendi fugit exercitationem ea incidunt assumenda! Laborum autem voluptatum, quas ipsa architecto corporis.</p>
+            </span>
+          </div>
+          <div class="col-md-4  step-item">
+          <span>
+            <center>
+             <div class="circle bg-primary"><h2>3</h2></div>
+            </center>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolore ex quidem amet, asperiores corrupti, fugiat nulla eligendi fugit exercitationem ea incidunt assumenda! Laborum autem voluptatum, quas ipsa architecto corporis.</p>
+            </span>
+          </div>
+          </div>
+      </div>
+    </section>
     <section>
 
     </section>

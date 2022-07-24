@@ -8,8 +8,7 @@ class m_auth extends CI_Model{
             'graduate_year'=>$year,
             'jurusan'=>$jurusan,
             'phone_number'=>$phone_number,
-            'password'=>$password,
-            
+            'password'=>password_hash($password,PASSWORD_DEFAULT),
             'user_role'=>2
         );
         $this->db->insert('user',$register_data);

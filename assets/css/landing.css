@@ -45,3 +45,17 @@
     height: 500px;
     object-fit: cover;
 }
+.step .step-item{
+    display: flex;
+    justify-content: center;
+}
+.step .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

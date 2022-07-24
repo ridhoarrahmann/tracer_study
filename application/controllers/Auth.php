@@ -27,7 +27,7 @@ class Auth extends CI_Controller {
 	public function index()
 	{
 
-		$this->form_validation->set_rules('email','Email','required',array('required'=>'email harus di isi'));
+		$this->form_validation->set_rules('email','Email','required|trim',array('required'=>'email harus di isi'));
 		$this->form_validation->set_rules('password','Password','required',array('required'=>'password harus di isi'));
 
 		if($this->form_validation->run()==false){
@@ -41,15 +41,16 @@ class Auth extends CI_Controller {
 			$this->load->model('m_auth');
 			$datauser=$this->m_auth->login($email);
 			if($datauser){
-				if($datauser['password']==$password){
-					redirect('home');
+				if(password_verify($password,$datauser['password'])){
+					$this->session->set_userdata('email',$email);
+					redirect('c_ridho_user');
 				}
 				else{
 					redirect('auth');
 				}
 			}
 			else{
-				$this->load->view('auth/header');
+			$this->load->view('auth/header');
 			$this->load->view('auth/register');
 			$this->load->view('auth/footer');              
 			}
@@ -62,7 +63,7 @@ class Auth extends CI_Controller {
 
 	public function register(){
 		$this->form_validation->set_rules('name','Name','required',array('required'=>'Nama harus di isi'));
-		$this->form_validation->set_rules('email','Email','required|valid_email',array('required'=>'E-Mail wajib di isi'));
+		$this->form_validation->set_rules('email','Email','required|trim',array('required'=>'E-Mail wajib di isi'));
 		
 		$this->form_validation->set_rules('password1','Password1','required|min_length[8]',array('required'=>'password harus di isi','min_length'=>'password minimal 8 karakter'));
 		$this->form_validation->set_rules('password2','Password2','required|matches[password1]',array('required'=>'password harus di isi','matches'=>'password tidak sama'));
